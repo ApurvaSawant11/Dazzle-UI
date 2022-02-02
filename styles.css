@@ -1,0 +1,144 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/stackoverflow-light.min.css");
+@import url("https://dazzle-ui.netlify.app/components/components.css");
+@import './css/navbar.css';
+@import './css/sidebar.css';
+
+:root {
+    --black:#313131;
+}
+
+.index-main{
+    text-align: center;
+    height: 100vh;
+    color: var(--black);
+}
+
+header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-heading{
+    font-size: 3rem !important;
+    padding-top: 1rem;
+}
+
+.content {
+    text-transform: capitalize;
+}
+
+.content-description {
+    font-size: 1.5rem;
+    max-width: 40%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.code {
+    border-radius: 3px;
+    background: #eff7ff;
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+.secondary-text {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.component-link {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding: 1rem;
+    white-space: nowrap;
+}
+
+.feature {
+    min-width: 10rem;
+}
+
+.feature i {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.feature p {
+    color: var(--dark-gray);
+}
+
+/* --------------------------- Components page css--------------------------- */
+
+.main {
+    grid-area: main;
+    padding: 1.5rem 4.5rem;
+  }
+  
+  .grid-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "nav nav nav nav nav nav"
+        "sidebar main main main main main"
+        "sidebar main main main main main"
+        "sidebar main main main main main"
+        "sidebar main main main main main";
+  }
+    
+  .component-heading {
+      padding-bottom: 1rem;
+  }
+      
+  .component-body {
+      border-top: 2px solid var(--light-gray);
+      border-bottom: 2px solid var(--light-gray);
+      padding-top: 1rem;
+  }
+     
+  .component-example-container {
+      border: 2px solid var(--light-gray);
+      padding: 1rem;
+      margin: 1rem 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+  }
+  
+  .component-code-snippet {
+    margin-bottom: 2rem;
+  }
+      
+  .component-example-container .floating{
+      position: static;
+  }
+
+/* --------------------- Modification for highlightjs ---------------- */
+
+pre code.hljs{
+    padding: 0 !important;
+    border: 2px solid var(--light-gray);
+}
+  
+.hljs{
+    background: #f8f8f8 !important;
+}
+  
+.hljs-name, .hljs-number, .hljs-quote, .hljs-selector-id, .hljs-template-tag, .hljs-type {
+    color: #df0523 !important;
+}
+  
+.hljs-link, .hljs-regexp, .hljs-selector-attr, .hljs-string, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+    color: #40a30f !important;
+}
