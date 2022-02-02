@@ -30,6 +30,7 @@ nav{
 .dazzle {
     font-size: 1.7rem;
     font-family: 'Archivo Black', sans-serif;
+    color: var(--primary);
 }
 
 .ui{
