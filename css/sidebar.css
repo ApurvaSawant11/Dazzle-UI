@@ -4,7 +4,6 @@
     top: 0rem;
     height: 100vh;
     overflow-y: auto;
-    max-width: 225px;
     color: black;
 }
 
@@ -34,18 +33,6 @@
 
 .sb-item:hover{
     background: var(--secondary);
-}
-
-
-.sidebar-components{
-    color: var(--primary);
-    list-style: none;
-    height: 100%;
-}
-
-.sidebar-item{
-    padding: 0.7rem;
-    margin-left: 1.5rem;
 }
 
 .scrollbar {

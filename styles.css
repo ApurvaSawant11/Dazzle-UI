@@ -17,8 +17,9 @@
 header {
     padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 1rem;
 }
 
 .index-heading{
