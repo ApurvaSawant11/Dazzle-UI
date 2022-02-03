@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&display=swap');
+
+nav{
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1.5rem 0 0.5rem;
+    color: var(--primary);
+    font-size: 1.2em;
+    font-weight: bold;
+    box-shadow: 1px 10px 11px var(--light-gray);
+    grid-area: nav;
+    height: 5rem;
+    align-items: center;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+}
+
+.dazzle {
+    font-size: 1.7rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--primary);
+}
+
+.ui{
+    color: var(--secondary);
+    font-size: 1.8rem;
+    font-family: 'Bungee Shade', cursive;
+    padding: 0 0 0.1rem 0.2rem;
+}
+
+.nav-section > i {
+    font-size: 1.5rem;
+}
+
+/* nav .anchor{
+    color: var(--primary);
+    font-size: medium;
+} */
+
+.anchor{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.active > ul{
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 1em;
+}
+
+.active a{
+    display: block;
+    color: var(--primary);
+    padding: 1em;
+}
+
+.my-hamburger{
+    display: none;
+}
