@@ -62,10 +62,8 @@ const sidebar = document.querySelector("sidebar");
 const selectedChild = location.pathname.split("/").pop().split(".")[0];
 
 const introduction = ["Colors", "Typography"]
-const elements = ["Badge","Button","Image","Input","List"]
-const views = ["Alert","Avatar","Card","Drawer"]
-const collections = ["Form", "Grid"]
-const modules = ["Navigation","Rating","Toast"]
+const elements = ["Button","Image","Input","List"]
+const views = ["Alert","Avatar","Badge","Card","Drawer"]
 
 
 const group1=createSbGroup()
@@ -86,20 +84,6 @@ const group3=createSbGroup()
 createNavElement(group3,"Views", false, true);
 views.forEach((item) => {
   const sbGroup=createNavElement(group3,item, false, false);
-  sidebar.appendChild(sbGroup);
-});
-
-const group4=createSbGroup()
-createNavElement(group4,"Collections", false, true);
-collections.forEach((item) => {
-  const sbGroup=createNavElement(group4,item, false, false);
-  sidebar.appendChild(sbGroup);
-});
-
-const group5=createSbGroup()
-createNavElement(group5,"Modules", false, true);
-elements.forEach((item) => {
-  const sbGroup=createNavElement(group5,item, false, false);
   sidebar.appendChild(sbGroup);
 });
 

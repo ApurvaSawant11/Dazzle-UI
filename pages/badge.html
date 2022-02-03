@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Badge</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Badge</h2>
+          <p>
+            Badges help you easily highlight notification count or user
+            status(online/offline) depending on where they are used.
+          </p>
+        </div>
+
+        <h4>Profile Badge</h4>
+        <p>Profile badge is used to show current status of the user.</p>
+        <p>
+          There are 3 variants:
+          <span class="secondary-text">online, busy, and offline.</span>
+        </p>
+        <div class="component-example-container">
+          <div class="badge">
+            <img
+              class="avatar size-lg rounded"
+              src="/images/profile_picture1.jpeg"
+              alt="profile"
+            />
+            <div class="badge-status online"></div>
+          </div>
+
+          <div class="badge">
+            <div class="avatar primary size-md rounded">AS</div>
+            <div class="badge-status busy"></div>
+          </div>
+
+          <div class="badge">
+            <img
+              class="avatar size-sm rounded"
+              src="/images/profile_picture1.jpeg"
+              alt="profile"
+            />
+            <div class="badge-status offline"></div>
+          </div>
+        </div>
+
+        <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="badge">
+                    <img class="avatar size-lg rounded" src="image.jpeg" alt="profile"/>
+                    <div class="badge-status online"></div>
+                </div>
+                
+                <div class="badge">
+                    <div class="avatar primary size-md rounded">AS</div>
+                    <div class="badge-status busy"></div>
+                </div>
+                
+                <div class="badge">
+                    <img class="avatar size-sm rounded" src="image.jpeg" alt="profile"/>
+                    <div class="badge-status offline"></div>
+                </div>
+            </code>
+        </pre>
+
+        <h4>Number Badge</h4>
+        <p>Number badge can be used to show notification count.</p>
+        <p>
+          Different colors for number badge are:
+          <span class="secondary-text"
+            >primary, success, warning, and danger</span
+          >
+        </p>
+        <div class="component-example-container">
+          <i class="fas fa-shopping-cart fa-2x badge badge-icon">
+            <span class="badge-value icon-badge success">4</span>
+          </i>
+
+          <i class="fas fa-bell fa-2x badge badge-icon">
+            <span class="badge-value icon-badge danger">7</span>
+          </i>
+
+          <i class="fas fa-envelope fa-2x badge badge-icon">
+            <span class="badge-value icon-badge primary">4</span>
+          </i>
+        </div>
+        <pre class="component-code-snippet">
+            <code class="language-html">
+                <i class="fas fa-shopping-cart fa-2x badge badge-icon">
+                    <span class="badge-value icon-badge success">4</span>
+                </i>
+        
+                <i class="fas fa-bell fa-2x badge badge-icon">
+                    <span class="badge-value icon-badge danger">7</span>
+                </i>
+            
+                <i class="fas fa-envelope fa-2x badge badge-icon">
+                    <span class="badge-value icon-badge primary">4</span>
+                </i>
+            </code>
+        </pre>
+
+        <h4>Badge on left</h4>
+        <p>
+          For icons and buttons, badges can be added on the left by adding just
+          one class: <span class="code secondary-text">badge-on-left</span>
+        </p>
+        <div class="component-example-container">
+          <i class="fas fa-envelope fa-2x badge badge-icon">
+            <span class="badge-value icon-badge badge-on-left primary">4</span>
+          </i>
+
+          <button class="button badge">
+            Button <span class="badge-value badge-on-left danger">11</span>
+          </button>
+        </div>
+        <pre class="component-code-snippet">
+                <code class="language-html">
+                    <i class="fas fa-envelope fa-2x badge badge-icon">
+                        <span class="badge-value icon-badge badge-on-left primary">4</span>
+                    </i>
+              
+                    <button class="button badge">
+                        Button <span class="badge-value badge-on-left danger">11</span>
+                    </button>
+                </code>
+            </pre>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
