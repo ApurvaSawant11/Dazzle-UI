@@ -1,136 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-    <link rel="stylesheet" href="/styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Dazzle : Alert</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
 
-        <nav></nav>
-        <sidebar class="sidebar scrollbar"></sidebar>
+      <div class="main">
+        <div class="component-heading">
+          <h2>Alerts</h2>
+          <p>
+            Alerts are used to attract user's attention for important
+            information without interrupting the user's flow.
+          </p>
+        </div>
 
-        <div class="main">
-            <div class="component-heading">
-                <h2>Alerts</h2>
-                <p>Alerts are used to attract user's attention for important information without interrupting the user's flow.<p>
+        <section class="component-section">
+          <h4 class="h4">Basic Alert</h4>
+          <p>A basic alert would look something like this.</p>
+          <div class="component-example-container">
+            <div class="alert">
+              <div class="alert-text">A basic alert example..!!</div>
+              <i class="fas fa-times"></i>
             </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+              <div class="alert">
+                <div class="alert-text">A basic alert example..!!</div>
+                <i class="fas fa-times"></i>
+              </div>
+            </code>
+          </pre>
+        </section>
 
-            <div class="component-body">
-                <h4 class="h4">Basic Alert</h4>
-                <p>A basic alert would look something like this.</p>
-                <div class="component-example-container">
-                    <div class="alert">
-                        <div class="alert-text">A basic alert example..!!</div>
-                        <i class="fas fa-times"></i>
-                    </div>
-                </div>
-                <div class="component-code-snippet">
-                    <pre><code class="language-html">
-                        <div class="alert">
-                            <div class="alert-text">A basic alert example..!!</div>
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </code></pre>
-                </div>
-
-                <h4>Alert with color</h4>
-                <p>Alerts are available in 5 colors. Just add the class names <span class="code secondary-text">primary</span>, <span class="code secondary-text">success</span>, <span class="code secondary-text">warning</span> or <span class="code secondary-text">danger</span> to use that color.
-                <div class="component-example-container">
-                    <div class="alert primary">
-                        <div class="alert-text"> A primary alert example without icon on left!!</div>
-                        <i class="fas fa-times"></i>
-                    </div>
-
-                    <div class="alert success">
-                        <div class="alert-text">
-                            <i class="fas fa-check-circle"></i> A success alert example..!!
-                        </div>
-                        <i class="fas fa-times"></i>
-                    </div>
-
-                    <div class="alert warning">
-                        <div class="alert-text">
-                            <i class="fas fa-exclamation-triangle"></i> A warning alert example..!!
-                        </div>
-                        <i class="fas fa-times"></i>
-                    </div>
-
-                    <div class="alert danger">
-                        <div class="alert-text"><i class="fas fa-skull-crossbones"></i>   A danger alert example..!!
-                        </div>
-                        <i class="fas fa-times"></i>
-                    </div>
-                </div>
-                <div class="component-code-snippet">
-                    <pre>
-                        <code class="language-html">
-                            <!-- primary alert-->
-                            <div class="alert primary">
-                                <div class="alert-text"> A primary alert example without icon on left!!</div>
-                                <i class="fas fa-times"></i>
-                            </div>
-
-                            <!-- success alert -->
-                            <div class="alert success">
-                                <div class="alert-text">
-                                    <i class="fas fa-check-circle"></i> A success alert example..!!
-                                </div>
-                                <i class="fas fa-times"></i>
-                            </div>
         
-                            <!-- warning alert -->
-                            <div class="alert warning">
-                                <div class="alert-text">
-                                    <i class="fas fa-exclamation-triangle"></i> A warning alert example..!!
-                                </div>
-                                <i class="fas fa-times"></i>
-                            </div>
-
-                            <!-- danger alert -->
-                            <div class="alert danger">
-                                <div class="alert-text"><i class="fas fa-skull-crossbones"></i>   A danger alert example..!!
-                                </div>
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </code>
-                    </pre>
-                </div>
-
-                <h4>Alert with Link</h4>
-                <p>If you want user to click on alert, you just have to add and anchor tag with class <span class="code secondary-text">alert-link</span> </p>
-                <div class="component-example-container">
-                    <div class="alert primary">
-                        <div class="alert-text">
-                            A primary alert example with a text link <a class="alert-link" href="#">Check it out!</a>
-                        </div>
-                        <i class="fas fa-times"></i>
-                    </div>
-                </div>
-
-                <div class="component-code-snippet">
-                    <pre>
-                        <code class="language-html">
-                            <div class="alert primary">
-                                <div class="alert-text">
-                                    A primary alert example with a text link <a class="alert-link" href="#">Check it out!</a>
-                                </div>
-                                <i class="fas fa-times"></i>
-                            </div>
-                        </code>
-                    </pre>
-                </div>
+        <section class="component-section">
+          <h4>Alert with color</h4>
+          <p>
+            Alerts are available in 5 colors. Just add the class names
+            <span class="code secondary-text">primary</span>,
+            <span class="code secondary-text">success</span>,
+            <span class="code secondary-text">warning</span> or
+            <span class="code secondary-text">danger</span> to use that color.
+          </p>
+          <div class="component-example-container">
+            <div class="alert primary">
+              <div class="alert-text">
+                A primary alert example without icon on left!!
+              </div>
+              <i class="fas fa-times"></i>
             </div>
-        </div>   
-    </div>    
+  
+            <div class="alert success">
+              <div class="alert-text">
+                <i class="fas fa-check-circle"></i> A success alert example..!!
+              </div>
+              <i class="fas fa-times"></i>
+            </div>
+  
+            <div class="alert warning">
+              <div class="alert-text">
+                <i class="fas fa-exclamation-triangle"></i> A warning alert
+                example..!!
+              </div>
+              <i class="fas fa-times"></i>
+            </div>
+  
+            <div class="alert danger">
+              <div class="alert-text">
+                <i class="fas fa-skull-crossbones"></i> A danger alert example..!!
+              </div>
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+              <!-- primary alert-->
+              <div class="alert primary">
+                <div class="alert-text"> A primary alert example without icon on left!!</div>
+                <i class="fas fa-times"></i>
+              </div>
+  
+              <!-- success alert -->
+              <div class="alert success">
+                <div class="alert-text">
+                  <i class="fas fa-check-circle"></i> A success alert example..!!
+                </div>
+                <i class="fas fa-times"></i>
+              </div>
+          
+              <!-- warning alert -->
+              <div class="alert warning">
+                <div class="alert-text">
+                  <i class="fas fa-exclamation-triangle"></i> A warning alert example..!!
+                </div>
+                  <i class="fas fa-times"></i>
+              </div>
+  
+              <!-- danger alert -->
+              <div class="alert danger">
+                <div class="alert-text">
+                  <i class="fas fa-skull-crossbones"></i> A danger alert example..!!
+                </div>
+                <i class="fas fa-times"></i>
+              </div>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Alert with Link</h4>
+          <p>
+            If you want user to click on alert, you just have to add and anchor
+            tag with class <span class="code secondary-text">alert-link</span>
+          </p>
+          <div class="component-example-container">
+            <div class="alert primary">
+              <div class="alert-text">
+                A primary alert example with a text link
+                <a class="alert-link" href="#">Check it out!</a>
+              </div>
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+              <div class="alert primary">
+                <div class="alert-text">
+                  A primary alert example with a text link <a class="alert-link" href="#">Check it out!</a>
+                </div>
+                <i class="fas fa-times"></i>
+              </div>
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
 
     <script type="text/javascript" src="/js/navbarSidebar.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
-</body>
+  </body>
 </html>
