@@ -101,11 +101,6 @@ header {
       border-bottom: 2px solid var(--light-gray);
       margin-bottom: 2rem;
   }
-      
-  .component-body {
-      border-top: 2px solid var(--light-gray);
-      padding-top: 1rem;
-  }
      
   .component-example-container {
       border: 2px solid var(--light-gray);

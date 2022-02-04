@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Image</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+            <h2>Responsive Image</h2>
+            <p>Images can be tricky to handle for smaller screens. But don't worry, we have got you covered.</p>
+        </div>
+
+        <section class="component-section">
+            <h4>Image</h4>
+            <p>Just add a container: <span class="code secondary-text">img-container</span> and a class: <span>img-responsive</span>. And there you have it, a responsive img!</p>
+            <div class="component-example-container">
+              <div class="img-container">
+                <img class="img-responsive" src="/images/pottery2.jpeg" alt="responsive-image"/>
+              </div>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <img class="img-responsive" src="/images/pottery2.jpeg" alt="responsive-image"/>
+                </code>
+            </pre>
+        </section>
+            
+        <section class="component-section">
+            <h4>Rounded Image</h4>
+            <p>You can also make rounded images responsive. Add a class: <span class="code secondary-text">img-rounded</span></p>
+            <div class="component-example-container">
+              <img class="img-responsive img-rounded" src="/images/cup1.jpg" alt="responsive-image"/>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <img class="img-responsive img-rounded" src="/images/cup1.jpg" alt="responsive-image"/>
+                </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Squared Image</h4>
+            <p>You can also make square images responsive. Add a class: <span class="code secondary-text">img-squared</span></p>
+            <div class="component-example-container">
+              <img class="img-responsive img-squared" src="/images/cup1.jpg" alt="responsive-image"/>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <img class="img-responsive img-squared" src="/images/cup1.jpg" alt="responsive-image"/>
+                </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
