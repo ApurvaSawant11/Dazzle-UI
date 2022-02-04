@@ -15,6 +15,7 @@ const github = document.querySelector(".fa-github");
 const hamburger = document.querySelector(".my-hamburger");
 const scrollbar = document.querySelector('.scrollbar')
 const main = document.querySelector('.main')
+const closeSidebar = document.querySelector(".close-sidebar");
 
 github.addEventListener("click", ()=>{
   hamburger.style.display="none";
@@ -22,11 +23,8 @@ github.addEventListener("click", ()=>{
 
 hamburger.addEventListener("click", () => {
     scrollbar.style.display="block"
-    main.style.opacity = 0.8;
 })
 
-
-main.addEventListener("click",()=>{
+closeSidebar.addEventListener("click", () => {
   scrollbar.style.display="none"
-  main.style.opacity = 1;
-});
+})

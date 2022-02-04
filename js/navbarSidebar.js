@@ -79,6 +79,11 @@ const elements = ["Button","Image","Input"]
 const views = ["Alert","Avatar","Badge","Card"]
 const modules = ["Navigation","Rating","Toast"]
 
+const closebtn = document.createElement("i")
+closebtn.className="fas fa-times close-sidebar";
+sidebar.append(closebtn);
+
+
 
 const group1=createSbGroup()
 createNavElement(group1,"Introduction", false, true);

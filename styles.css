@@ -175,6 +175,11 @@ header {
       .my-hamburger {
           display: block;
       }
+
+      .close-sidebar {
+        display: block;
+      }
+
   }
 
   @media screen and (max-width: 640px) {
