@@ -40,37 +40,44 @@ nav{
     padding: 0 0 0.1rem 0.2rem;
 }
 
-.nav-section > i {
+.nav-section  i {
     font-size: 1.5rem;
-}
-
-/* nav .anchor{
+    cursor: pointer;
     color: var(--primary);
-    font-size: medium;
-} */
+}
 
 .anchor{
     text-decoration: none;
     color: var(--primary);
 }
 
-.active > ul{
-    display: block;
-    position: absolute;
-    top: 8%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-    background-color: var(--secondary);
-    padding: 1em;
-}
-
-.active a{
-    display: block;
-    color: var(--primary);
-    padding: 1em;
-}
-
 .my-hamburger{
     display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-section > a, .nav-section > i {
+        font-size: 1.2rem;
+    }
+
+    .logo-div > img {
+        width: 3.5rem
+    }
+
+    .dazzle {
+        font-size: 1.3rem;
+    }
+
+    .ui {
+        font-size: 1.37rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    nav{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0;
+    }
 }
