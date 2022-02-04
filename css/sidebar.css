@@ -35,6 +35,13 @@
     background: var(--secondary);
 }
 
+.close-sidebar {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
 .scrollbar {
     padding-top: 1rem;
 }

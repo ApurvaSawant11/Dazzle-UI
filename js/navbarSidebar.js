@@ -1,35 +1,37 @@
 const nav = document.querySelector("nav");
-const logoDiv = document.createElement("div");
-logoDiv.className="logo-div"
+
+const logoDiv = createDivElement("logo-div");
 
 const logo = document.createElement("img");
 logo.src = "/images/logo.svg";
 logo.className="logo";
 
-const dazzle = document.createElement("div");
-dazzle.className="dazzle"
+const dazzle = createDivElement("dazzle");
 dazzle.innerHTML="DAZZLE"
 
-const ui = document.createElement("div");
-ui.className="ui"
+const ui = createDivElement("ui");
 ui.innerHTML="UI"
 
 logoDiv.appendChild(logo);
 logoDiv.appendChild(dazzle);
 logoDiv.appendChild(ui);
 
-const navDiv1 = document.createElement("div")
-navDiv1.className="nav-section"
+const navDiv1 = createDivElement("nav-section")
 navDiv1.appendChild(logoDiv);
 
 
-const navDiv2 = document.createElement("div")
-navDiv2.className="nav-section"
+const navDiv2 = createDivElement("nav-section")
 
 nav.appendChild(navDiv1);
 nav.appendChild(navDiv2);
 
-const anchors = [["Home","/index.html"], ["Documentation","/pages/alert.html"]]
+function createDivElement(classname){
+  const newElement = document.createElement("div")
+  newElement.className=classname
+  return newElement
+}
+
+const anchors = [["Home","/index.html"], ["Examples","/pages/alert.html"]]
 
 anchors.forEach(item => createAnchorElements(item))
 
@@ -45,16 +47,27 @@ function createAnchorElements(item) {
 
 
 
-const socials = ["fab fa-github", "fab fa-twitter", "fas fa-globe", "fas fa-bars"]
+const socials = [["fab fa-github","https://github.com/ApurvaSawant11/Dazzle-UI-Components"], ["fab fa-twitter","https://www.twitter.com/ApurvaSawant11"], ["fab fa-linkedin","https://www.linkedin.com/in/apurvasawant11/"], ["fas fa-bars"]]
 
 socials.forEach(item => createIconElements(item))
 
 function createIconElements(item) {
-    const listItem = document.createElement("i");
-
-    item === "fas fa-bars" ? listItem.className = item + " my-hamburger"  :listItem.className = item;
-    
+  const listItem = document.createElement("i");
+  if(item[0] === "fas fa-bars")
+  {
+    listItem.className = item[0] + " my-hamburger"
     navDiv2.appendChild(listItem)
+  }
+  else{
+
+    listItem.className = item[0];
+    link = document.createElement("a");
+    link.href = item[1];
+    link.target="_blank";
+    link.appendChild(listItem);
+    navDiv2.appendChild(link)
+  }
+    
 }
 
 // ---------------------------------- Sidebar js ---------------------------------------
@@ -62,8 +75,14 @@ const sidebar = document.querySelector("sidebar");
 const selectedChild = location.pathname.split("/").pop().split(".")[0];
 
 const introduction = ["Colors", "Typography"]
-const elements = ["Button","Image","Input","List"]
-const views = ["Alert","Avatar","Badge","Card","Drawer"]
+const elements = ["Button","Image","Input"]
+const views = ["Alert","Avatar","Badge","Card"]
+const modules = ["Navigation","Rating","Toast"]
+
+const closebtn = document.createElement("i")
+closebtn.className="fas fa-times close-sidebar";
+sidebar.append(closebtn);
+
 
 
 const group1=createSbGroup()
@@ -84,6 +103,13 @@ const group3=createSbGroup()
 createNavElement(group3,"Views", false, true);
 views.forEach((item) => {
   const sbGroup=createNavElement(group3,item, false, false);
+  sidebar.appendChild(sbGroup);
+});
+
+const group4=createSbGroup()
+createNavElement(group4,"Modules", false, true);
+modules.forEach((item) => {
+  const sbGroup=createNavElement(group4,item, false, false);
   sidebar.appendChild(sbGroup);
 });
 
