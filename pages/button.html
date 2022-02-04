@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Button</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+            <h2>Buttons</h2>
+            <p>Button is a trigger that allows user to take action. We have a different range of options for a button so that you can choose the one that fits your requirement.</p>
+        </div>
+
+        <section class="component-section">
+            <h4 class="h4">Basic Buttons</h4>
+            <p>You can create buttons using 3 tags: <span class="code secondary-text">&lt;a&gt;</span>, <span class="code secondary-text">&lt;button&gt;</span>, and <span class="code secondary-text">&lt;input&gt;</span>. All you have to do is add a class <span class="secondary-text">button</span> to the tag.</p>
+            <div class="component-example-container">
+                <a class="button" href="#">Anchor</a>
+                <button class="button"> Button</button>
+                <input class="button" type="submit" value="Input-Submit"/>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                  <a class="button" href="#">Anchor</a>
+                  <button class="button"> Button</button>
+                  <input class="button" type="submit" value="Input-Submit"/>
+                </code>
+            </pre>
+        </section>
+            
+        <section class="component-section">
+            <h4>Colored Buttons</h4>
+            <p>Colored buttons are used when you want to grab user's attention primarily on that button. We have 6 colors available for colored buttons. Check them below</p>
+            <div class="component-example-container">
+                <button class="button primary">Primary</button>
+                <button class="button secondary">Secondary</button>
+                <button class="button success">Success</button>
+                <button class="button info">Info</button>
+                <button class="button warning">Warning</button>
+                <button class="button danger">Danger</button>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <button class="button primary">Primary</button>
+                    <button class="button secondary">Secondary</button>
+                    <button class="button success">Success</button>
+                    <button class="button info">Info</button>
+                    <button class="button warning">Warning</button>
+                    <button class="button danger">Danger</button>
+                </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Inverted Buttons</h4>
+            <p>Inverted buttons are used as secondary buttons in the website. You can use them when you want a button but don't that button to grab user's attention </p>
+            <div class="component-example-container">
+                <button class="button inverted-primary">Primary</button>
+                <button class="button inverted-secondary">Secondary</button>
+                <button class="button inverted-success">Success</button>
+                <button class="button inverted-info">Info</button>
+                <button class="button inverted-warning">Warning</button>
+                <button class="button inverted-danger">Danger</button>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <button class="button inverted-primary">Primary</button>
+                    <button class="button inverted-secondary">Secondary</button>
+                    <button class="button inverted-success">Success</button>
+                    <button class="button inverted-info">Info</button>
+                    <button class="button inverted-warning">Warning</button>
+                    <button class="button inverted-danger">Danger</button>
+                </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Disabled Buttons</h4>
+            <p>When you don't want a user to click on a button before performing some action, just add a class <span class="secondary-text"> disabled</span> to the button</p>
+            <div class="component-example-container">
+                <button class="button disabled">Disabled</button>
+                <button class="button primary disabled">Primary</button>
+                <button class="button inverted-danger disabled">Disabled</button>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <button class="button disabled">Disabled</button>
+                    <button class="button primary disabled">Primary</button>
+                    <button class="button inverted-danger disabled">Disabled</button>
+                </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Icon Buttons</h4>
+            <p>You can add icons as buttons as well. They are compact and are widely used in websites.</p>
+            <div class="component-example-container">
+                <i class="fas fa-download button"></i>
+                <i class="fas fa-share-alt button inverted-info"></i>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <i class="fas fa-download button"></i>
+                    <i class="fas fa-share-alt button inverted-info"></i>
+                </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Floating Buttons</h4>
+            <p>Floating button is fixed at the bottom-right corner. You customize it by adding different color and icon.</p>
+            <div class="component-example-container">
+                <i class="fas fa-plus button danger floating"></i>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <img class="img-responsive img-squared" src="/images/cup1.jpg" alt="responsive-image"/>
+                </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
