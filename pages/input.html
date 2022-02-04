@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Input</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Input</h2>
+          <p>Inputs are used to take information from the user.</p>
+        </div>
+
+        <section class="component-section">
+            <h4>Basic Input</h4>
+            <p>The basic input field looks something like below.</p>
+            <div class="component-example-container display-block">
+              <div class="input-field">
+                <input class="input" type="text" value="Apurva" required/>
+                <span class="bar"></span>
+                <label class="placeholder">Enter Name</label>
+              </div>
+            </div>
+            <pre class="component-code-snippet">
+              <code class="language-html">
+                <div class="input-field">
+                  <input class="input" type="text" value="Apurva" required/>
+                  <span class="bar"></span>
+                  <label class="placeholder">Enter Name</label>
+                </div>
+              </code>
+            </pre>
+        </section>
+
+        
+        <section class="component-section">
+            <h4>Input with error</h4>
+            <p>If user enters invalid information, just add a class <span class="code secondary-text">error</span> to the input tag.</p>
+            <div class="component-example-container display-block">
+              <div class="input-field">
+                <input class="input error" type="text" required/>
+                <span class="bar"></span>
+                <label class="placeholder">Enter Email ID</label>
+                <span class="error-msg">Please enter valid Email ID</span>
+              </div>
+            </div>
+            <pre class="component-code-snippet">
+              <code class="language-html">
+                <div class="input-field">
+                    <input class="input error" type="text" required/>
+                    <span class="bar"></span>
+                    <label class="placeholder">Enter Email ID</label>
+                    <span class="error-msg">Please enter valid Email ID</span>
+                </div>
+              </code>
+            </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Textarea</h4>
+            <p>Textarea gives more space to users for entering information.</p>
+            <div class="component-example-container display-block">
+              <div class="input-field">
+                <textarea class="input textarea" type="text" required></textarea>
+                <span class="bar"></span>
+                <label class="placeholder">Textarea</label>
+              </div>
+            </div>
+            <pre class="component-code-snippet">
+              <code class="langugage-html">
+                <div class="input-field">
+                    <textarea class="input textarea" type="text" required></textarea>
+                    <span class="bar"></span>
+                    <label class="placeholder">Textarea</label>
+                </div>
+              </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
