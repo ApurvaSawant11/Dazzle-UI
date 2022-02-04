@@ -122,6 +122,10 @@ header {
       position: static;
   }
 
+  .display-block {
+      display: block;
+  }
+
 /* --------------------- Modification for highlightjs ---------------- */
 
 pre {
