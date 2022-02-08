@@ -46,8 +46,7 @@ header {
     font-weight: bold;
 }
 
-.secondary-text {
-    color: var(--secondary);
+.secondary-text{
     font-weight: bold;
 }
 
