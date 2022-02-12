@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Rating</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Rating</h2>
+          <p>
+            Rating components help you get customer feedback quickly. Dazzle UI
+            has 3 different types of rating formats.
+          </p>
+        </div>
+
+        <section class="component-section">
+          <h4>Star Rating</h4>
+          <p>
+            Star rating is widely used and help user rate the service/item in
+            range of 1-5 stars.
+            <span class="secondary-text">Hover and Click</span> on the rating
+            icons to mark you rating.
+          </p>
+          <div class="component-example-container">
+            <div class="rating-group">
+              <label aria-label="1 star" class="rating-label" for="rating-1">
+                <i class="rating-icon rating-icon--star fa fa-star"></i>
+              </label>
+              <input
+                class="rating-input"
+                name="rating"
+                id="rating-1"
+                value="1"
+                type="radio"
+              />
+              <label aria-label="2 stars" class="rating-label" for="rating-2">
+                <i class="rating-icon rating-icon--star fa fa-star"></i>
+              </label>
+              <input
+                class="rating-input"
+                name="rating"
+                id="rating-2"
+                value="2"
+                type="radio"
+              />
+              <label aria-label="3 stars" class="rating-label" for="rating-3">
+                <i class="rating-icon rating-icon--star fa fa-star"></i>
+              </label>
+              <input
+                class="rating-input"
+                name="rating"
+                id="rating-3"
+                value="3"
+                type="radio"
+              />
+              <label aria-label="4 stars" class="rating-label" for="rating-4">
+                <i class="rating-icon rating-icon--star fa fa-star"></i>
+              </label>
+              <input
+                class="rating-input"
+                name="rating"
+                id="rating-4"
+                value="4"
+                type="radio"
+              />
+              <label aria-label="5 stars" class="rating-label" for="rating-5">
+                <i class="rating-icon rating-icon--star fa fa-star"></i>
+              </label>
+              <input
+                class="rating-input"
+                name="rating"
+                id="rating-5"
+                value="5"
+                type="radio"
+              />
+            </div>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="rating-group">
+                    <label aria-label="1 star" class="rating-label" for="rating-1">
+                      <i class="rating-icon rating-icon--star fa fa-star"></i>
+                    </label>
+                    <input class="rating-input" name="rating" id="rating-1" value="1" type="radio"/>
+
+                    <label aria-label="2 stars" class="rating-label" for="rating-2">
+                      <i class="rating-icon rating-icon--star fa fa-star"></i>
+                    </label>
+                    <input class="rating-input" name="rating" id="rating-2" value="2" type="radio"/>
+
+                    <label aria-label="3 stars" class="rating-label" for="rating-3">
+                      <i class="rating-icon rating-icon--star fa fa-star"></i>
+                    </label>
+                    <input class="rating-input" name="rating" id="rating-3" value="3" type="radio"/>
+
+                    <label aria-label="4 stars" class="rating-label" for="rating-4">
+                      <i class="rating-icon rating-icon--star fa fa-star"></i>
+                    </label>
+                    <input class="rating-input" name="rating" id="rating-4" value="4" type="radio"/>
+
+                    <label aria-label="5 stars" class="rating-label" for="rating-5">
+                      <i class="rating-icon rating-icon--star fa fa-star"></i>
+                    </label>
+                    <input class="rating-input" name="rating" id="rating-5" value="5" type="radio"/>
+                  </div>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Thumb Rating</h4>
+          <p>
+            Customer likes and dislikes can be easily recorded using thumb
+            ratings. <span class="secondary-text">Hover and Click</span> on the
+            rating icons to mark you rating.
+          </p>
+          <div class="component-example-container">
+            <div class="thumb-group gap-2">
+              <input
+                type="radio"
+                class="thumb-rating"
+                name="thumb-rating"
+                id="thumbs-up"
+                value="like"
+              />
+              <label class="like" for="thumbs-up">
+                <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
+                <legend class="mt-1">Like it</legend>
+              </label>
+
+              <input
+                type="radio"
+                class="thumb-rating"
+                name="thumb-rating"
+                id="thumbs-down"
+                value="dislike"
+              />
+              <label class="dislike" for="thumbs-down">
+                <i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i>
+                <legend class="mt-1">Hate it</legend>
+              </label>
+            </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="thumb-group gap-2">
+                    <input type="radio" class="thumb-rating" name="thumb-rating" id="thumbs-up" value="like"/>
+                    <label class="like" for="thumbs-up">
+                      <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
+                      <legend class="mt-1">Like it</legend>
+                    </label>
+          
+                    <input type="radio" class="thumb-rating" name="thumb-rating" id="thumbs-down" value="dislike"/>
+                    <label class="dislike" for="thumbs-down">
+                      <i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i>
+                      <legend class="mt-1">Hate it</legend>
+                    </label>
+                  </div>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Face / Expression Rating</h4>
+          <p>
+            Emojis help customer express their feeling easily. We have 4
+            expression for rating.
+            <span class="secondary-text">Hover and Click</span> on the rating
+            icons to mark you rating.
+          </p>
+          <div class="component-example-container">
+            <div class="face-group gap-1 mt-1p5">
+              <input
+                type="radio"
+                class="face-rating"
+                name="face-rating"
+                id="excellent"
+                value="excellent"
+              />
+              <label class="excellent text-center" for="excellent">
+                <div class="font-s-2">&#128525;</div>
+                <legend class="m-0p5">Excellent</legend>
+              </label>
+
+              <input
+                type="radio"
+                class="face-rating"
+                name="face-rating"
+                id="good"
+                value="good"
+              />
+              <label class="good text-center" for="good">
+                <div class="font-s-2">&#128516;</div>
+                <legend class="m-0p5">Good</legend>
+              </label>
+
+              <input
+                type="radio"
+                class="face-rating"
+                name="face-rating"
+                id="okay"
+                value="okay"
+              />
+              <label class="okay text-center" for="okay">
+                <div class="font-s-2">&#128577;</div>
+                <legend class="m-0p5">Okay</legend>
+              </label>
+
+              <input
+                type="radio"
+                class="face-rating"
+                name="face-rating"
+                id="bad"
+                value="bad"
+              />
+              <label class="bad text-center" for="bad">
+                <div class="font-s-2">&#128545;</div>
+                <legend class="m-0p5">Bad</legend>
+              </label>
+            </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="face-group gap-1 mt-1p5">
+                    <input type="radio" class="face-rating" name="face-rating" id="excellent" value="excellent"/>
+                    <label class="excellent text-center" for="excellent">
+                      <div class="font-s-2">&#128525;</div>
+                      <legend class="m-0p5">Excellent</legend>
+                    </label>
+          
+                    <input type="radio" class="face-rating" name="face-rating" id="good" value="good"/>
+                    <label class="good text-center" for="good">
+                      <div class="font-s-2">&#128516;</div>
+                      <legend class="m-0p5">Good</legend>
+                    </label>
+          
+                    <input type="radio" class="face-rating" name="face-rating" id="okay" value="okay"/>
+                    <label class="okay text-center" for="okay">
+                      <div class="font-s-2">&#128577;</div>
+                      <legend class="m-0p5">Okay</legend>
+                    </label>
+          
+                    <input type="radio" class="face-rating" name="face-rating" id="bad" value="bad"/>
+                    <label class="bad text-center" for="bad">
+                      <div class="font-s-2">&#128545;</div>
+                      <legend class="m-0p5">Bad</legend>
+                    </label>
+                  </div>
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
