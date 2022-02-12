@@ -10,9 +10,9 @@
 }
 
 .index-main {
-    text-align: center;
-    height: 100vh;
+    min-height: 65vh;
     color: var(--black);
+    justify-content: center;
 }
 
 header {
@@ -90,6 +90,12 @@ header {
 
 .feature p {
     color: var(--dark-gray);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 /* --------------------------- Components page css--------------------------- */
