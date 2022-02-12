@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Modal</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Modal</h2>
+          <p>
+            Modal are positioned over everything else on the webpage. It is used
+            when you want to redirect your user into taking action on modal
+            content.
+          </p>
+        </div>
+
+        <!-- ------------------------Simple Modal---------------------------- -->
+
+        <section class="component-section">
+          <h4>Simple Modal</h4>
+          <p>
+            Simple text modal can be used to inform user or take simple action
+            inputs.
+          </p>
+          <div class="component-example-container">
+            <div class="modal border-2 mx-auto m-1p5">
+              <div class="modal-heading border-bottom-1">Modal Heading</div>
+              <div class="modal-body p-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                nobis totam error laudantium cupiditate iusto harum excepturi
+                quisquam tempore nam.
+              </div>
+              <div class="border-top-1 text-right p-1">
+                <button class="button basic mx-1">Cancel</button>
+                <button class="button primary mx-1">Save</button>
+              </div>
+            </div>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="modal border-2 mx-auto m-1p5">
+                    <div class="modal-heading border-bottom-1">Modal Heading</div>
+                    <div class="modal-body p-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                      nobis totam error laudantium cupiditate iusto harum excepturi
+                      quisquam tempore nam.
+                    </div>
+                    <div class="border-top-1 text-right p-1">
+                      <button class="button basic mx-1">Cancel</button>
+                      <button class="button primary mx-1">Save</button>
+                    </div>
+                </div>
+            </code>
+          </pre>
+
+          <!-- ---------------------------Simple Modal Demo------------------------------- -->
+
+          <div class="component-example-container">
+            <button class="button primary basic-modal-demo">Modal Demo</button>
+            <div class="basic-modal">
+              <div class="modal border-2 mx-auto m-1p5">
+                <div class="modal-heading border-bottom-1">Modal Heading</div>
+                <div class="modal-body p-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque nobis totam error laudantium cupiditate iusto harum
+                  excepturi quisquam tempore nam.
+                </div>
+                <div class="border-top-1 text-right p-1">
+                  <button class="button basic mx-1 basic-modal-cancel">
+                    Cancel
+                  </button>
+                  <button class="button primary mx-1">Save</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- --------------------Form Modal------------------------------ -->
+
+        <section class="component-section">
+          <h4>Form Modal</h4>
+          <p>Any type of forms can be designed using our form modal.</p>
+          <div class="component-example-container">
+            <div class="modal border-2 m-1p5 p-1">
+              <div class="badge">
+                <div class="modal-heading text-center">LOG IN</div>
+                <div class="modal-body">
+                  <div class="input-field my-2 mx-auto">
+                    <input
+                      class="input"
+                      type="email"
+                      value="apurva.sawant@gmail.com"
+                      required
+                    />
+                    <span class="bar"></span>
+                    <label class="placeholder">Enter Email</label>
+                  </div>
+
+                  <div class="input-field my-1p5 mx-auto">
+                    <input class="input" type="password" required />
+                    <span class="bar"></span>
+                    <label class="placeholder">Password</label>
+                  </div>
+                </div>
+                <div class="badge-value">
+                  <i class="fas fa-times card-close"></i>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="button primary m-1">Login</button>
+                <p class="text-center">
+                  New user? Create your account
+                  <a class="secondary-text font-w-700" href="#">here</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="modal border-2 m-1p5 p-1">
+                    <div class="badge">
+                      <div class="modal-heading text-center">LOG IN</div>
+                      <div class="modal-body">
+                        <div class="input-field my-2 mx-auto">
+                          <input class="input" type="email" value="apurva.sawant@gmail.com" required/>
+                          <span class="bar"></span>
+                          <label class="placeholder">Enter Email</label>
+                        </div>
+      
+                        <div class="input-field my-1p5 mx-auto">
+                          <input class="input" type="password" required />
+                          <span class="bar"></span>
+                          <label class="placeholder">Password</label>
+                        </div>
+                      </div>
+
+                      <div class="badge-value">
+                        <i class="fas fa-times card-close"></i>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button class="button primary m-1">Login</button>
+                      <p class="text-center">
+                        New user? Create your account
+                        <a class="secondary-text font-w-700" href="#">here</a>
+                      </p>
+                    </div>
+                  </div>
+            </code>
+          </pre>
+
+          <!-- ---------------Form Modal Demo--------------------- -->
+
+          <div class="component-example-container">
+            <button class="button primary form-modal-demo">
+              Form Modal Demo
+            </button>
+            <div class="form-modal">
+              <div class="modal border-1 mx-auto m-1p5 p-1">
+                <div class="badge">
+                  <div class="modal-heading text-center">LOG IN</div>
+                  <div class="modal-body">
+                    <div class="input-field my-2 mx-auto">
+                      <input
+                        class="input"
+                        type="email"
+                        value="apurva.sawant@gmail.com"
+                        required
+                      />
+                      <span class="bar"></span>
+                      <label class="placeholder">Enter Email</label>
+                    </div>
+
+                    <div class="input-field my-1p5 mx-auto">
+                      <input class="input" type="password" required />
+                      <span class="bar"></span>
+                      <label class="placeholder">Password</label>
+                    </div>
+                  </div>
+                  <div class="badge-value">
+                    <i class="fas fa-times form-modal-close card-close"></i>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button class="button primary m-1">Login</button>
+                  <p class="text-center">
+                    New user? Create your account
+                    <a class="secondary-text font-w-700" href="#">here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/component.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
