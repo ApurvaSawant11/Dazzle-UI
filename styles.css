@@ -5,13 +5,9 @@
 @import './css/sidebar.css';
 @import './css/colors.css';
 
-:root {
-    --black: #313131;
-}
-
 .index-main {
     min-height: 65vh;
-    color: var(--black);
+    color: var(--light-black);
     justify-content: center;
 }
 
@@ -159,7 +155,7 @@ footer {
         right: 5px;
         border: 2px solid var(--secondary);
         border-right: 0px;
-        background: var(--white);
+        background: var(--white-color);
         width: 225px;
         height: 100vh;
     }

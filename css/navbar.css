@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&display=swap');
 
 nav{
-    background-color: var(--white);
+    background-color: var(--white-color);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

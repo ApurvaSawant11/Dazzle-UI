@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap:wrap;
     height: 8rem;
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .color {
@@ -39,7 +39,7 @@
 
 .palette-container > .color:nth-child(7){
     background: var(--light-gray);
-    color: black;
+    color: var(--dark-black);
 }
 
 .palette-container > .color:nth-child(8){

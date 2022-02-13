@@ -4,7 +4,7 @@
     top: 0rem;
     height: 100vh;
     overflow-y: auto;
-    color: black;
+    color: var(--dark-black);
 }
 
 .sb-group{
@@ -18,7 +18,7 @@
 }
 
 .sb-item{
-    color: black;
+    color: var(--dark-black);
     cursor: pointer;
     display: block;
     text-decoration: none;
