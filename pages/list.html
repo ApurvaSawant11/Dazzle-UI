@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : List</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Lists</h2>
+          <p>
+            List is a collection of related items. There are 2 types of lists:
+            Ordered and Unordered.
+          </p>
+        </div>
+
+        <section class="component-section">
+          <h4 class="h4">Ordered List</h4>
+          <p>
+            Ordered list is used when you want to rank or number the items in an
+            order.
+          </p>
+          <div class="component-example-container display-block">
+            <ol class="list-group list-group-roman mx-auto">
+              <li class="list-group-item">First list item</li>
+              <li class="list-group-item">Second list item</li>
+              <li class="list-group-item">Third list item</li>
+              <li class="list-group-item">Fourth list item</li>
+            </ol>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <ol class="list-group list-group-roman mx-auto">
+                    <li class="list-group-item">First list item</li>
+                    <li class="list-group-item">Second list item</li>
+                    <li class="list-group-item">Third list item</li>
+                    <li class="list-group-item">Fourth list item</li>
+                  </ol>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Unordered List</h4>
+          <p>
+            Unordered list is used when you want don't want to specify any
+            ordered to the items.
+          </p>
+          <div class="component-example-container display-block">
+            <ul class="list-group mx-auto">
+              <li class="list-group-item">First list item</li>
+              <li class="list-group-item">Second list item</li>
+              <li class="list-group-item">Third list item</li>
+              <li class="list-group-item">Fourth list item</li>
+            </ul>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <ul class="list-group mx-auto">
+                  <li class="list-group-item">First list item</li>
+                  <li class="list-group-item">Second list item</li>
+                  <li class="list-group-item">Third list item</li>
+                  <li class="list-group-item">Fourth list item</li>
+                </ul>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Colored Lists</h4>
+          <p>
+            List items can be marked as active or highlighted by adding our
+            color utils classes to the list item.
+          </p>
+          <div class="component-example-container">
+            <ul class="list-group">
+              <li class="list-group-item primary">First list item</li>
+              <li class="list-group-item">Second list item</li>
+              <li class="list-group-item info">Third list item</li>
+              <li class="list-group-item">Fourth list item</li>
+            </ul>
+            <ol class="list-group list-group-alpha">
+              <li class="list-group-item">First list item</li>
+              <li class="list-group-item info-text font-w-700">
+                Second list item (Colored bold)
+              </li>
+              <li class="list-group-item danger-text">
+                Third list item (Colored)
+              </li>
+              <li class="list-group-item">Fourth list item</li>
+            </ol>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <!-- unordered colored list -->
+                <ul class="list-group">
+                    <!-- class (primary) -->
+                    <li class="list-group-item primary">First list item</li>
+                    <li class="list-group-item">Second list item</li>
+                    <!-- class (info) -->
+                    <li class="list-group-item info">Third list item</li>
+                    <li class="list-group-item">Fourth list item</li>
+                  </ul>
+
+                  <!-- ordered colored list  -->
+                <ol class="list-group list-group-alpha">
+                    <li class="list-group-item">First list item</li>
+                    <!-- class (info-text) -->
+                    <li class="list-group-item info-text font-w-700">Second list item (Colored bold)</li>
+                    <!-- class (danger-text) -->
+                    <li class="list-group-item danger-text">Third list item (Colored)</li>
+                    <li class="list-group-item">Fourth list item</li>
+                </ol>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4 class="h4">Disabled Item</h4>
+          <p>
+            List items can be marked as disabled by adding class:
+            <span class="code secondary-text">disabled-item</span>
+          </p>
+          <div class="component-example-container display-block">
+            <ul class="list-group mx-auto">
+              <li class="list-group-item disabled-item">
+                First list item (Disabled)
+              </li>
+              <li class="list-group-item">Second list item</li>
+              <li class="list-group-item">Third list item</li>
+              <li class="list-group-item">Fourth list item</li>
+            </ul>
+          </div>
+          <pre class="component-code-snippet">
+              <code class="language-html">
+                <ul class="list-group mx-auto">
+                    <li class="list-group-item disabled-item">
+                      First list item (Disabled)
+                    </li>
+                    <li class="list-group-item">Second list item</li>
+                    <li class="list-group-item">Third list item</li>
+                    <li class="list-group-item">Fourth list item</li>
+                </ul>
+              </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

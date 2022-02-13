@@ -1,62 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css"/>
-    <link rel="stylesheet" href="https://dazzle-ui-components.netlify.app/components/components.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://dazzle-ui-components.netlify.app/components/components.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <title>Dazzle UI</title>
-</head>
-<body>
-    <div class="index-main">
-        <header>
-            <a class="button" target="_blank" href="https://github.com/ApurvaSawant11/Dazzle-UI-Components">GitHub</a>
-            <a class="button primary" href="/pages/alert.html">Documentation</a>
-        </header>
+  </head>
+  <body>
+    <header>
+      <a
+        class="button button-anchor"
+        target="_blank"
+        href="https://github.com/ApurvaSawant11/Dazzle-UI-Components"
+        >GitHub</a
+      >
+      <a class="button primary" href="/pages/alert.html">Documentation</a>
+    </header>
+    <div class="index-main text-center flex-column items-center">
+      <h1 class="index-heading dazzle">
+        Dazzle<span class="index-heading ui">UI</span>
+      </h1>
+      <h3 class="content">
+        A CSS framework that helps you <span class="secondary-text">shine</span>
+      </h3>
+      <p class="content-description">
+        Dazzle UI is a free open source, highly customizable component library.
+      </p>
 
-        <h1 class="index-heading dazzle">Dazzle<span class="index-heading ui">UI</span></h1>
-        <h3 class="content">A CSS framework that helps you <span class="secondary-text">shine</span></h3>
-        <p class="content-description">Dazzle UI is a free open source, highly customizable component library.</p>
-
-        <p>All you have to do is add below link in your <span class="code secondary-text">&lt;head&gt;</span></p>
-        <pre class="component-link">
+      <p>
+        All you have to do is add below link in your
+        <span class="code secondary-text">&lt;head&gt;</span>
+      </p>
+      <pre class="component-link">
             <code class="language-html">
                 <link rel="stylesheet" href="https://dazzle-ui-components.netlify.app/components/components.css">
             </code>
-        </pre>
+      </pre>
+      <a class="button primary mt-2" href="/pages/alert.html">Documentation</a>
+    </div>
 
-        <div class="feature-container">
-            <div class="feature">
-                <i class="fab fa-github-alt github-icon"></i>
-                <p>Open source on GitHub</p>
-            </div>
-
-            <div class="feature">
-                <i class="fas fa-tools tools-icon"></i>
-                <p>Built with HTML and CSS</p>
-            </div>
-
-            <div class="feature">
-                <i class="fas fa-toolbox toolbox-icon"></i>
-                <p>Ready to use Components </p>
-            </div>
-
-            <div class="feature">
-                <i class="fas fa-pencil-alt pencil-icon"></i>
-                <p>Very easy to Customize</p>
-            </div>
+    <footer class="text-center">
+      <div class="feature-container">
+        <div class="feature">
+          <i class="fab fa-github-alt github-icon"></i>
+          <p>Open source on GitHub</p>
         </div>
 
+        <div class="feature">
+          <i class="fas fa-tools tools-icon"></i>
+          <p>Built with HTML and CSS</p>
+        </div>
 
-        <p><small>Made with <span class="secondary-text">&lt;/&gt;</span> by Apurva Sawant</small></p>
-        <p><small>© 2022 Dazzle Designs</small></p>
-    </div>
+        <div class="feature">
+          <i class="fas fa-toolbox toolbox-icon"></i>
+          <p>Ready to use Components</p>
+        </div>
+
+        <div class="feature">
+          <i class="fas fa-pencil-alt pencil-icon"></i>
+          <p>Very easy to Customize</p>
+        </div>
+      </div>
+
+      <p>
+        <small
+          >Made with <span class="secondary-text">&lt;/&gt;</span> by Apurva
+          Sawant</small
+        >
+      </p>
+      <p><small>© 2022 Dazzle Designs</small></p>
+    </footer>
 
     <script type="text/javascript" src="/js/navbarSidebar.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
-</body>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
 </html>

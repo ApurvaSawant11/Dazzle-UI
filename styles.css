@@ -6,13 +6,13 @@
 @import './css/colors.css';
 
 :root {
-    --black:#313131;
+    --black: #313131;
 }
 
-.index-main{
-    text-align: center;
-    height: 100vh;
+.index-main {
+    min-height: 65vh;
     color: var(--black);
+    justify-content: center;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
     gap: 1rem;
 }
 
-.index-heading{
+.index-heading {
     font-size: 3rem !important;
     padding-top: 1rem;
 }
@@ -46,7 +46,7 @@ header {
     font-weight: bold;
 }
 
-.secondary-text{
+.secondary-text {
     font-weight: bold;
 }
 
@@ -56,7 +56,7 @@ header {
     white-space: pre-line;
 }
 
-.component-link > .language-html{
+.component-link>.language-html {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@ header {
 @media screen and (max-width: 480px) {
     .component-link {
         width: 100%;
-    }  
+    }
 }
 
 .feature-container {
@@ -73,7 +73,7 @@ header {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap:2rem;
+    gap: 2rem;
     padding: 1rem;
     white-space: nowrap;
     margin-top: 2.5rem;
@@ -92,50 +92,56 @@ header {
     color: var(--dark-gray);
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* --------------------------- Components page css--------------------------- */
 
 .main {
     grid-area: main;
     padding: 1.5rem 5.5rem 1.5rem 4.5rem;
-  }
-  
-  .grid-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-areas:
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
         "nav nav nav nav nav nav"
         "sidebar main main main main main"
         "sidebar main main main main main"
         "sidebar main main main main main"
         "sidebar main main main main main";
-  }
-    
-  .component-heading {
-      padding-bottom: 2rem;
-      border-bottom: 2px solid var(--light-gray);
-      margin-bottom: 2rem;
-  }
-     
-  .component-example-container {
-      border: 2px solid var(--light-gray);
-      padding: 1rem;
-      margin: 1rem 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-  }
-      
-  .component-example-container .floating{
-      position: static;
-  }
+}
 
-  .display-block {
-      display: block;
-  }
+.component-heading {
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--light-gray);
+    margin-bottom: 2rem;
+}
 
-  .heading-size{
+.component-example-container {
+    border: 2px solid var(--light-gray);
+    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.component-example-container .floating {
+    position: static;
+}
+
+.display-block {
+    display: block;
+}
+
+.heading-size {
     font-size: 1rem;
     color: var(--dark-gray);
     font-weight: 500;
@@ -143,10 +149,10 @@ header {
     margin-right: 1.5rem;
     display: inline-block;
     text-align: right;
-  }
+}
 
-  @media screen and (max-width: 900px){
-      .sidebar {
+@media screen and (max-width: 900px) {
+    .sidebar {
         position: fixed;
         display: none;
         z-index: 5;
@@ -156,40 +162,45 @@ header {
         background: var(--white);
         width: 225px;
         height: 100vh;
-      }
+    }
 
-      .grid-layout {
+    .grid-layout {
         grid-template-areas:
-        "nav nav nav nav nav nav"
-        "main main main main main main"
-        "main main main main main main"
-        "main main main main main main"
-        "main main main main main main";
-      }
+            "nav nav nav nav nav nav"
+            "main main main main main main"
+            "main main main main main main"
+            "main main main main main main"
+            "main main main main main main";
+    }
 
-      .main {
-          padding: 1.5rem 4rem;
-      }
+    .main {
+        padding: 1.5rem 4rem;
+    }
 
-      .my-hamburger {
-          display: block;
-      }
-
-      .close-sidebar {
+    .my-hamburger {
         display: block;
-      }
+    }
 
-  }
+    .close-sidebar {
+        display: block;
+    }
 
-  @media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 640px) {
     .main {
         padding: 1.5rem 1rem;
     }
 
-    .nav-section > .anchor {
+    .nav-section>.anchor {
         display: none;
     }
 }
+
+.component-example-container>.list-group {
+    max-width: 30rem;
+}
+
 /* --------------------- Modification for highlightjs ---------------- */
 
 pre {
@@ -197,25 +208,39 @@ pre {
     margin-bottom: 3rem;
 }
 
-pre code.hljs{
-    -ms-overflow-style: none; /* Edge, Internet Explorer */
-    scrollbar-width: none; /* Firefox */
+pre code.hljs {
+    -ms-overflow-style: none;
+    /* Edge, Internet Explorer */
+    scrollbar-width: none;
+    /* Firefox */
     border: 2px solid var(--light-gray);
     width: 100%;
 }
-  
+
 pre code.hljs::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
-.hljs{
+.hljs {
     background: #f8f8f8 !important;
 }
-  
-.hljs-name, .hljs-number, .hljs-quote, .hljs-selector-id, .hljs-template-tag, .hljs-type {
+
+.hljs-name,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-id,
+.hljs-template-tag,
+.hljs-type {
     color: #df0523 !important;
 }
-  
-.hljs-link, .hljs-regexp, .hljs-selector-attr, .hljs-string, .hljs-symbol, .hljs-template-variable, .hljs-variable {
+
+.hljs-link,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-string,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
     color: #40a30f !important;
 }
