@@ -88,12 +88,6 @@ header {
     color: var(--dark-gray);
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /* --------------------------- Components page css--------------------------- */
 
 .main {
