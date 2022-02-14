@@ -10,21 +10,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
 })
 
-const github = document.querySelector(".fa-github");
-
 const hamburger = document.querySelector(".my-hamburger");
 const scrollbar = document.querySelector('.scrollbar')
-const main = document.querySelector('.main')
 const closeSidebar = document.querySelector(".close-sidebar");
-
-github.addEventListener("click", ()=>{
-  hamburger.style.display="none";
-})
 
 hamburger.addEventListener("click", () => {
     scrollbar.style.display="block"
 })
 
 closeSidebar.addEventListener("click", () => {
-  scrollbar.style.display="none"
+  scrollbar.style.removeProperty("display")
 })

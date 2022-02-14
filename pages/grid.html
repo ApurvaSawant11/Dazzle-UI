@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Grid</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Grid</h2>
+          <p>Grids help you represent your data in tabular form with ease. To create grid use class <span class="secondary-text code">grid</span></p>
+        </div>
+
+        <section class="component-section">
+          <h4>Two Columns</h4>
+          <p>Grid of two columns can be created using class: <span class="secondary-text code">grid-cols-2</span>.</p>
+          <div class="component-example-container">
+            <div class="border-2 grid grid-cols-2 radius-4px p-0p5">
+                <div class="primary radius-4px mx-0p5 p-1">Grid Item One</div>
+                <div class="primary radius-4px mx-0p5 p-1">Grid Item Two</div>
+            </div>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="border-2 grid grid-cols-2 radius-4px p-0p5">
+                    <div class="primary radius-4px mx-0p5 p-1">Grid Item One</div>
+                    <div class="primary radius-4px mx-0p5 p-1">Grid Item Two</div>
+                </div>
+            </code>
+          </pre>
+        </section>
+        
+
+        <section class="component-section">
+          <h4>Three Columns</h4>
+          <p>Grid of three columns can be created using class: <span class="secondary-text code">grid-cols-3</span>.</p>
+          <div class="component-example-container">
+            <div class="border-2 grid grid-cols-3 radius-4px p-0p5">
+                <div class="secondary-bg radius-4px fw-700 mx-0p5 p-1">Grid Item One</div>
+                <div class="secondary-bg radius-4px fw-700 mx-0p5 p-1">Grid Item Two</div>
+                <div class="secondary-bg radius-4px fw-700 mx-0p5 p-1">
+                  Grid Item Three
+                </div>
+            </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+              <img class="avatar squared size-lg" src="profile_pic1.jpeg"/>
+
+              <img class="avatar squared size-md" src="profile_pic2.jpeg"/>
+
+              <img class="avatar squared size-sm" src="profile_pic3.jpeg"/>
+            </code>
+          </pre>
+        </section>
+        
+        <section class="component-section">
+          <h4>Two Rows</h4>
+          <p>Grids can also be created in two rows using class: <span class="secondary-text code">grid-rows-2</span>. </p>
+          <div class="component-example-container">
+            <div class="border-2 grid grid-rows-2 radius-4px p-0p5">
+                <div class="primary radius-4px my-0p5 p-1">Grid Item One</div>
+                <div class="primary radius-4px my-0p5 p-1">Grid Item Two</div>
+              </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="border-2 grid grid-rows-2 radius-4px p-0p5">
+                    <div class="primary radius-4px my-0p5 p-1">Grid Item One</div>
+                    <div class="primary radius-4px my-0p5 p-1">Grid Item Two</div>
+                </div>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+            <h4>Three Rows</h4>
+            <p>Grids can also be created in three rows using class: <span class="secondary-text code">grid-rows-3</span>. </p>
+            <div class="component-example-container">
+                <div class="border-2 grid grid-rows-3 radius-4px p-0p5">
+                    <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item One</div>
+                    <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item Two</div>
+                    <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item Three</div>
+                </div>
+            </div>
+            <pre class="component-code-snippet">
+                <code class="language-html">
+                    <div class="border-2 grid grid-rows-3 radius-4px p-0p5">
+                        <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item One</div>
+                        <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item Two</div>
+                        <div class="secondary-bg radius-4px fw-700 my-0p5 p-1">Grid Item Three</div>
+                    </div>
+                </code>
+            </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>

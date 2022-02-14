@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap:wrap;
     height: 8rem;
-    color: var(--white);
+    color: var(--white-color);
 }
 
 .color {
@@ -11,6 +11,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0.5rem;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .palette-container > .color:nth-child(1){
@@ -39,9 +41,21 @@
 
 .palette-container > .color:nth-child(7){
     background: var(--light-gray);
-    color: black;
+    color: var(--dark-black);
 }
 
 .palette-container > .color:nth-child(8){
     background: var(--dark-gray);
+}
+
+.color-utils-class{
+    font-size: 1rem;
+    color: var(--secondary);
+    background: var(--white-color);
+    font-weight: 700;
+    width: 10rem;
+    margin-right: 1.5rem;
+    display: inline-block;
+    text-align: right;
+    white-space: nowrap;
 }

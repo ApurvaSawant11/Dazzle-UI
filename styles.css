@@ -5,13 +5,9 @@
 @import './css/sidebar.css';
 @import './css/colors.css';
 
-:root {
-    --black: #313131;
-}
-
 .index-main {
     min-height: 65vh;
-    color: var(--black);
+    color: var(--light-black);
     justify-content: center;
 }
 
@@ -92,12 +88,6 @@ header {
     color: var(--dark-gray);
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /* --------------------------- Components page css--------------------------- */
 
 .main {
@@ -118,12 +108,12 @@ footer {
 
 .component-heading {
     padding-bottom: 2rem;
-    border-bottom: 2px solid var(--light-gray);
+    border-bottom: 3px solid var(--border-color);
     margin-bottom: 2rem;
 }
 
 .component-example-container {
-    border: 2px solid var(--light-gray);
+    border: 3px solid var(--border-color);
     padding: 1rem;
     margin: 1rem 0;
     display: flex;
@@ -141,14 +131,16 @@ footer {
     display: block;
 }
 
-.heading-size {
+.util-class {
     font-size: 1rem;
-    color: var(--dark-gray);
-    font-weight: 500;
-    width: 4rem;
+    color: var(--secondary);
+    background: var(--white-color);
+    font-weight: 700;
+    width: 6rem;
     margin-right: 1.5rem;
     display: inline-block;
     text-align: right;
+    white-space: nowrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -159,7 +151,7 @@ footer {
         right: 5px;
         border: 2px solid var(--secondary);
         border-right: 0px;
-        background: var(--white);
+        background: var(--white-color);
         width: 225px;
         height: 100vh;
     }
