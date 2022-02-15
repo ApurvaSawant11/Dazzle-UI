@@ -80,10 +80,10 @@ function createIconElements(item) {
 const sidebar = document.querySelector("sidebar");
 const selectedChild = location.pathname.split("/").pop().split(".")[0];
 
-const introduction = ["Colors", "Typography"]
+const introduction = ["Getting Started", "Colors", "Typography"]
 const elements = ["Button", "Image", "Input", "List"]
 const views = ["Alert", "Avatar", "Badge", "Card"]
-const modules = ["Grid","Modal", "Navigation", "Rating", "Toast"]
+const modules = ["Grid", "Modal", "Navigation", "Rating", "Toast"]
 
 const closebtn = document.createElement("i")
 closebtn.className = "fas fa-times close-sidebar";
@@ -91,64 +91,56 @@ sidebar.append(closebtn);
 
 
 
-const group1 = createSbGroup()
-createNavElement(group1, "Introduction", false, true);
+const group1 = createSbGroup("Introduction")
 introduction.forEach((item) => {
-  const sbGroup = createNavElement(group1, item, false, false);
+  const sbGroup = createNavElement(group1, item);
   sidebar.appendChild(sbGroup);
 });
 
-const group2 = createSbGroup()
-createNavElement(group2, "Elements", false, true);
+const group2 = createSbGroup("Elements")
 elements.forEach((item) => {
-  const sbGroup = createNavElement(group2, item, false, false);
+  const sbGroup = createNavElement(group2, item);
   sidebar.appendChild(sbGroup);
 });
 
-const group3 = createSbGroup()
-createNavElement(group3, "Views", false, true);
+const group3 = createSbGroup("Views")
 views.forEach((item) => {
-  const sbGroup = createNavElement(group3, item, false, false);
+  const sbGroup = createNavElement(group3, item);
   sidebar.appendChild(sbGroup);
 });
 
-const group4 = createSbGroup()
-createNavElement(group4, "Modules", false, true);
+const group4 = createSbGroup("Modules")
 modules.forEach((item) => {
-  const sbGroup = createNavElement(group4, item, false, false);
+  const sbGroup = createNavElement(group4, item);
   sidebar.appendChild(sbGroup);
 });
 
 
-function createSbGroup() {
-  const group = document.createElement('div');
-  group.className = "sb-group"
+function createSbGroup(headerName) {
+  const group = createDivElement('sb-group');
+  const header = createDivElement('sb-header');
+  header.innerHTML = headerName;
+  group.appendChild(header)
   return group
 }
 
 
-function createNavElement(sbGroup, item, component, title) {
-  const child = document.createElement("div");
-  title
-    ?
-    (child.className = "sb-header") :
-    (child.className = "sb-item");
+function createNavElement(sbGroup, item) {
+  const child = createDivElement("sb-item");
   item.toLowerCase() === selectedChild ?
     child.classList.add("active") :
-    addListener(item, child, component);
+    addListener(item, child);
   child.innerHTML = item;
 
   sbGroup.appendChild(child);
   return sbGroup
 }
 
-function addListener(item, child, component) {
+function addListener(item, child) {
   child.addEventListener("click", () => {
+    item = item.replace(/\s/g, '');
     const lowerCasedItem = item.toLowerCase();
-    const path = component ?
-      `/pages/${lowerCasedItem}.html` :
-      `/pages/${lowerCasedItem}.html`;
+    const path = `/pages/${lowerCasedItem}.html`;
     location = path;
-    console.log(path)
   });
 }
