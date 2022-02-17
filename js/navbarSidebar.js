@@ -83,7 +83,7 @@ const selectedChild = location.pathname.split("/").pop().split(".")[0];
 const introduction = ["Getting Started", "Colors", "Typography"]
 const elements = ["Button", "Image", "Input", "List"]
 const views = ["Alert", "Avatar", "Badge", "Card"]
-const modules = ["Grid", "Modal", "Navigation", "Rating", "Toast"]
+const modules = ["Grid", "Modal", "Navigation", "Rating", "Slider", "Toast"]
 
 const closebtn = document.createElement("i")
 closebtn.className = "fas fa-times close-sidebar";
