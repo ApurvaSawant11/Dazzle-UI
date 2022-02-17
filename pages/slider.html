@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Slider</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Slider</h2>
+          <p>
+            Dazzle UI has 2 types of sliders. One is <span class="secondary-text">Price Range Slider</span> and the other is <span class="secondary-text">Image Slider / Carousel</span>
+          </p>
+        </div>
+
+        <section class="component-section">
+          <h4>Price Range SLider</h4>
+          <p>
+            Price range slider are widely used in e-commerce apps. Dazzle UI has a two way slider which takes both minimun and maximum values.
+          </p>
+          <div class="component-example-container">
+            <div class="price-range mt-2">
+              <div class="range-group">
+                <input
+                  type="range"
+                  class="range min-range"
+                  min="0"
+                  max="19999"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="range max-range"
+                  min="0"
+                  max="19999"
+                  value="19999"
+                />
+                <div class="slider">
+                  <div class="progress"></div>
+                </div>
+              </div>
+              <div class="input-group mt-2">
+                <div class="price-range__input">
+                  <span class="input-prefix">₹</span>
+                  <input
+                    class="range-input-field min-field"
+                    type="number"
+                    min="0"
+                    max="19999"
+                    value="0"
+                  />
+                </div>
+                <span class="price-range__delimiter">-</span>
+                <div class="price-range__input">
+                  <span class="input-prefix">₹</span>
+                  <input
+                    class="range-input-field max-field"
+                    type="number"
+                    value="19999"
+                    min="0"
+                    max="19999"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="price-range mt-2">
+                    <div class="range-group">
+                      <input type="range" class="range min-range" min="0" max="19999" value="0"/>
+                      <input type="range" class="range max-range" min="0" max="19999" value="19999"/>
+                      <div class="slider">
+                        <div class="progress"></div>
+                      </div>
+                    </div>
+                    <div class="input-group mt-2">
+                      <div class="price-range__input">
+                        <span class="input-prefix">₹</span>
+                        <input class="range-input-field min-field" type="number" min="0" max="19999" value="0"/>
+                      </div>
+                      <span class="price-range__delimiter">-</span>
+                      <div class="price-range__input">
+                        <span class="input-prefix">₹</span>
+                        <input class="range-input-field max-field" type="number" value="19999" min="0" max="19999"/>
+                      </div>
+                    </div>
+                  </div>
+            </code>
+          </pre>
+        </section>
+
+        <section class="component-section">
+          <h4>Carousel</h4>
+          <p>
+            Carousels are a great way oo adding images to your website without taking extra space.
+          </p>
+          <div class="component-example-container">
+            <div class="carousel-container">
+                <div class="container">
+                  <img class="carousel-img" src="/images/carousel-3.jpg" />
+                </div>
+    
+                <div class="container">
+                  <img class="carousel-img" src="/images/carousel-4.jpg" />
+                </div>
+    
+                <a class="left" onclick="moveSlide(-1)">
+                  <i class="fas fa-angle-left text-xl" aria-hidden="true"></i>
+                </a>
+                <a class="right" onclick="moveSlide(1)">
+                  <i class="fas fa-angle-right text-xl" aria-hidden="true"></i>
+                </a>
+              </div>
+              <br />
+    
+              <div class="text-center">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+              </div>
+          </div>
+          <pre class="component-code-snippet">
+            <code class="language-html">
+                <div class="carousel-container">
+                    <div class="container">
+                      <img class="carousel-img" src="/images/carousel-3.jpg" />
+                    </div>
+        
+                    <div class="container">
+                      <img class="carousel-img" src="/images/carousel-4.jpg" />
+                    </div>
+        
+                    <a class="left" onclick="moveSlide(-1)">
+                      <i class="fas fa-angle-left text-xl" aria-hidden="true"></i>
+                    </a>
+                    <a class="right" onclick="moveSlide(1)">
+                      <i class="fas fa-angle-right text-xl" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                  <br />
+        
+                  <div class="text-center">
+                    <span class="dots" onclick="currentSlide(1)"></span>
+                    <span class="dots" onclick="currentSlide(2)"></span>
+                  </div>
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/component.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>
