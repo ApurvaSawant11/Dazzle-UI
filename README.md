@@ -1,12 +1,18 @@
 <div align="center">
 
-<img alt="Dazzle UI Logo" style="background: white" src="images/logo-diamond.svg"/>
+<img alt="Dazzle UI Logo" src="images/logo-diamond.svg"/>
 
-# Dazzle-UI
+# Dazzle UI
 
 Dazzle UI is a free open source, highly customizable component library.
 
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
 </div>
+
+---
 
 ## Quick start
 
@@ -45,11 +51,6 @@ Dazzle UI is a free open source, highly customizable component library.
 - Slider
 - Toast
 - Typography
-
-## Tech stack
-
-- HTML
-- CSS
 
 ## Connect
 
