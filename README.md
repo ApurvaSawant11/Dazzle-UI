@@ -1,7 +1,5 @@
 <div align="center">
 
-<img alt="Dazzle UI Logo" src="images/logo-diamond.svg"/>
-
 # Dazzle UI
 
 Dazzle UI is a free open source, highly customizable component library.
@@ -19,10 +17,7 @@ Dazzle UI is a free open source, highly customizable component library.
 - All you have to do is copy-paste below link into your head tag before all other stylesheets are loaded.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://dazzle-ui-components.netlify.app/components/components.css"
-/>
+<link rel="stylesheet" href="https://dazzle-ui-components.netlify.app/components/components.css" />
 ```
 
 - To know how to use these components, read the [documentation](https://dazzle-ui.netlify.app). Is contains all components with visual examples.
