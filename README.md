@@ -1,6 +1,6 @@
 <div align="center">
 
-<img alt="Dazzle UI Logo" src="images/DazzleUI.JPG"/>
+<img alt="Dazzle UI Logo" style="background: white" src="images/logo-diamond.svg"/>
 
 # Dazzle-UI
 
