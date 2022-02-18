@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dazzle : Getting Started</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <nav></nav>
+      <sidebar class="sidebar scrollbar"></sidebar>
+
+      <div class="main">
+        <div class="component-heading">
+          <h2>Getting Started</h2>
+          <p>Dazzle UI is a free open source, highly customizable component library built with HTML an CSS. It has a wide range of components that you can use directly without putting extra efforts. </p>
+        </div>
+
+        <section class="component-section">
+          <h4>How to use Dazzle UI ?</h4>
+          <p>All you have to do is add below link in your
+            <span class="code secondary-text">&lt;head&gt;</span>. Remember, you have to add it before any other stylesheet that you will be using.</p>
+        
+          <pre class="component-code-snippet mb-2">
+            <code class="language-html">
+                <link rel="stylesheet" href="https://dazzle-ui-components.netlify.app/components/components.css">
+              </pre>
+            </code>
+          </pre>
+        </section>
+        
+
+        <section class="component-section">
+          <h4>Looking for an Easier Option?</h4>
+          <p>Instead of adding above link to all your pages, you can import our component library in your root CSS file. Check out how!</p>
+          <pre class="component-code-snippet mb-2">
+            <code class="language-css">
+                @import url("https://dazzle-ui-components.netlify.app/components/components.css");
+            </code>
+          </pre>
+        </section>
+
+        <p class="text-center fw-700">You are all set! Use our components as a base and create amazing websites. </p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/js/navbarSidebar.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </body>
+</html>
