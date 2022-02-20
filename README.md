@@ -23,6 +23,14 @@ Dazzle UI is a free open source, highly customizable component library.
 />
 ```
 
+<div align="center">OR</div>
+
+Import below link in your root CSS file
+
+```js
+@import url("https://dazzle-ui-components.netlify.app/components/components.css");
+```
+
 - To know how to use these components, read the [documentation](https://dazzle-ui.netlify.app). Is contains all components with visual examples.
 
 ## Features
