@@ -63,6 +63,10 @@ Import below link in your root CSS file
 
 ![Dazzle UI Demo](/images/gifs/dazzle_ui_gif.gif)
 
+## Responsive Demo
+
+![Dazzle UI Mobile Demo](/images/gifs/dazzle_ui_mobile_gif.gif)
+
 ## Connect
 
 <a href="https://twitter.com/ApurvaSawant11"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
