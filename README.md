@@ -31,7 +31,12 @@ Import below link in your root CSS file
 @import url("https://dazzle-ui-components.netlify.app/components/components.css");
 ```
 
-- To know how to use these components, read the [documentation](https://dazzle-ui.netlify.app). Is contains all components with visual examples.
+
+## Quick links
+
+- To know how to use these components, read the [documentation](https://dazzle-ui.netlify.app). It contains all components with visual examples.
+
+- To check implementation code, go to [Components Repository](https://github.com/ApurvaSawant11/Dazzle-UI-Components). It contains CSS code for all the Components.
 
 ## Features
 
