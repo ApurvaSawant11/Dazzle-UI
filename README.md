@@ -65,7 +65,7 @@ Import below link in your root CSS file
 
 ## Responsive Demo
 
-![Dazzle UI Mobile Demo](/images/gifs/dazzle_ui_mobile_gif.gif)
+<div align="center"><img src="/images/gifs/dazzle_ui_mobile_gif.gif" width="350" height="700" /></div>
 
 ## Connect
 
