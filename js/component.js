@@ -45,28 +45,20 @@ const iconToastDemo = document.querySelector(".icon-toast-demo");
 const iconToast = document.querySelector(".icon-toast-container");
 const iconToastClose = document.querySelector(".icon-toast-close");
 
-if (simpleToastDemo) {
-  simpleToastDemo.addEventListener("click", () => {
-    toggleShowClass(simpleToast);
-    setTimeout(() => toggleShowClass(simpleToast), 3000);
+if (simpleToastDemo && simpleToastClose && iconToastDemo && iconToastClose) {
+  simpleToastDemo.addEventListener('click', () => {
+    simpleToast.classList.add("show")
+    setTimeout(() => simpleToast.classList.remove("show"), 3000);
   });
-}
 
-if (simpleToastClose) {
-  simpleToastClose.addEventListener("click", () =>
-    toggleShowClass(simpleToast)
-  );
-}
+  simpleToastClose.addEventListener('click', () => simpleToast.classList.remove("show"))
 
-if (iconToastDemo) {
-  iconToastDemo.addEventListener("click", () => {
-    toggleShowClass(iconToast);
-    setTimeout(() => toggleShowClass(iconToast), 3000);
+  iconToastDemo.addEventListener('click', () => {
+    iconToast.classList.add('show')
+    setTimeout(() => iconToast.classList.remove('show'), 3000);
   });
-}
 
-if (iconToastClose) {
-  iconToastClose.addEventListener("click", () => toggleShowClass(iconToast));
+  iconToastClose.addEventListener('click', () => iconToast.classList.remove('show'))
 }
 
 // ||-----------------------Navigation bar-----------------------------------

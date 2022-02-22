@@ -16,6 +16,11 @@ body {
   justify-content: center;
 }
 
+.index-main a:hover,
+.index-header-btns a:hover {
+    transform: scale(1.1);
+}
+
 header {
   padding: 1rem 2rem;
   display: flex;
