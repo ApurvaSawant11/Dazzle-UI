@@ -1,11 +1,10 @@
 .sidebar{
     grid-area: sidebar;
-    /* display: block; */
     position: sticky;
     top: 0rem;
     height: 100vh;
     overflow-y: auto;
-    color: var(--dark-black);
+    color: var(--theme-text-color);
 }
 
 .sb-group{
@@ -16,10 +15,11 @@
     border-bottom: 1px solid rgba(65, 65, 65, 0.61);
     padding: 0.4rem 0 0.4rem 1rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .sb-item{
-    color: var(--dark-black);
+    color: var(--theme-text-color);
     cursor: pointer;
     display: block;
     text-decoration: none;
@@ -28,12 +28,10 @@
     border-radius: 4px;
 }
 
-.sb-item.active{
+.sb-item.active, .sb-item:hover{
     background: var(--secondary);
-}
-
-.sb-item:hover{
-    background: var(--secondary);
+    color: var(--theme-bg);
+    font-weight: 700;
 }
 
 .close-sidebar {

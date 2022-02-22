@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&display=swap');
 
 nav{
-    background-color: var(--white-color);
+    background-color: var(--navbar-bg);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,7 +9,7 @@ nav{
     color: var(--primary);
     font-size: 1.2em;
     font-weight: bold;
-    box-shadow: 1px 10px 11px var(--light-gray);
+    box-shadow: 1px 1px 11px var(--shadow);
     grid-area: nav;
     height: 5rem;
     align-items: center;
@@ -57,7 +57,7 @@ nav{
 
 @media screen and (max-width: 480px) {
 
-    .nav-section > a, .nav-section > i {
+    .nav-section a, .nav-section i {
         font-size: 1.2rem;
     }
 

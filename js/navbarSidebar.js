@@ -51,9 +51,10 @@ function createAnchorElements(item) {
 
 
 const socials = [
-  ["fab fa-github", "https://github.com/ApurvaSawant11/Dazzle-UI-Components"],
+  ["fab fa-github", "https://github.com/ApurvaSawant11"],
   ["fab fa-twitter", "https://www.twitter.com/ApurvaSawant11"],
   ["fab fa-linkedin", "https://www.linkedin.com/in/apurvasawant11/"],
+  ["fas icon fa-moon"],
   ["fas fa-bars"]
 ]
 
@@ -64,7 +65,11 @@ function createIconElements(item) {
   if (item[0] === "fas fa-bars") {
     listItem.className = item[0] + " my-hamburger"
     navDiv2.appendChild(listItem)
-  } else {
+  } else if(item[0] ==="fas icon fa-moon"){
+    listItem.className = item[0] + " theme-toggle-btn"
+    navDiv2.appendChild(listItem)
+  }
+  else {
 
     listItem.className = item[0];
     link = document.createElement("a");
