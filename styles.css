@@ -18,7 +18,7 @@ body {
 
 .index-main a:hover,
 .index-header-btns a:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 header {
@@ -62,7 +62,7 @@ header {
   white-space: pre-line;
 }
 
-.component-link > .language-html {
+.component-link>.language-html {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,7 +163,9 @@ header {
 @media screen and (max-width: 1080px) {
   nav {
     position: fixed;
+    z-index: 5;
   }
+
   .sidebar {
     position: fixed;
     display: none;
@@ -203,12 +205,12 @@ header {
     padding: 5rem 1rem 1.5rem 1rem;
   }
 
-  .nav-section > .anchor {
+  .nav-section>.anchor {
     display: none;
   }
 }
 
-.component-example-container > .list-group {
+.component-example-container>.list-group {
   max-width: 30rem;
 }
 
