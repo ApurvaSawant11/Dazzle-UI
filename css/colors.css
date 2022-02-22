@@ -51,7 +51,7 @@
 .color-utils-class {
     font-size: 1rem;
     color: var(--secondary);
-    background: var(--white-color);
+    background: var(--theme-bg);
     font-weight: 700;
     width: 10rem;
     margin-right: 1.5rem;
