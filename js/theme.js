@@ -6,7 +6,7 @@ const rootElement = document.querySelector(":root");
 const darkThemeColors = () => {
     rootElement.style.setProperty("--theme-bg", "#141414");
     rootElement.style.setProperty("--theme-text-color", "#bbbbbb");
-    rootElement.style.setProperty("--navbar-bg", "#000000")
+    rootElement.style.setProperty("--navbar-bg", "#0e0e0e")
     rootElement.style.setProperty("--primary","#1c96ff");
     rootElement.style.setProperty("--primary-hover","#133e64");
     rootElement.style.setProperty("--info-hover","#cbe2ff");

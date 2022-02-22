@@ -93,6 +93,13 @@ header {
   color: var(--dark-gray);
 }
 
+.floating {
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 /* --------------------------- Components page css--------------------------- */
 
 .main {
@@ -149,6 +156,9 @@ header {
 }
 
 @media screen and (max-width: 1080px) {
+  nav {
+    position: fixed;
+  }
   .sidebar {
     position: fixed;
     display: none;
@@ -171,7 +181,7 @@ header {
   }
 
   .main {
-    padding: 1.5rem 4rem;
+    padding: 5rem 4rem 1.5rem 4rem;
   }
 
   .my-hamburger {
@@ -185,7 +195,7 @@ header {
 
 @media screen and (max-width: 680px) {
   .main {
-    padding: 1.5rem 1rem;
+    padding: 5rem 1rem 1.5rem 1rem;
   }
 
   .nav-section > .anchor {
