@@ -44,6 +44,7 @@ Import below link in your root CSS file
 1. Built with HTML and CSS
 1. Ready to use Components
 1. Open source on GitHub
+1. Dark Theme for Components
 
 ## Components
 
@@ -71,6 +72,10 @@ Import below link in your root CSS file
 ## Responsive Demo
 
 <div align="center"><img src="/images/gifs/dazzle_ui_mobile_gif.gif" width="350" height="700" /></div>
+
+## What's new?
+
+🌙 Dark theme added for all the components.
 
 ## Connect
 
