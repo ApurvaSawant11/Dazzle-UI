@@ -31,7 +31,6 @@ Import below link in your root CSS file
 @import url("https://dazzle-ui-components.netlify.app/components/components.css");
 ```
 
-
 ## Quick links
 
 - To know how to use these components, read the [documentation](https://dazzle-ui.netlify.app). It contains all components with visual examples.
@@ -71,7 +70,7 @@ Import below link in your root CSS file
 
 ## Responsive Demo
 
-<div align="center"><img src="/images/gifs/dazzle_ui_mobile_gif.gif" width="350" height="700" /></div>
+<div align="center"><img src="/images/gifs/dazzle_ui_mobile_dark_gif.gif" width="350" height="700" /></div>
 
 ## What's new?
 

@@ -16,8 +16,14 @@ logoDiv.appendChild(logo);
 logoDiv.appendChild(dazzle);
 logoDiv.appendChild(ui);
 
+const a = document.createElement("a");
+a.href = "/index.html";
+a.className = "no-underline"
+
+a.appendChild(logoDiv)
+
 const navDiv1 = createDivElement("nav-section")
-navDiv1.appendChild(logoDiv);
+navDiv1.appendChild(a);
 
 
 const navDiv2 = createDivElement("nav-section")
@@ -33,7 +39,7 @@ function createDivElement(classname) {
 
 const anchors = [
   ["Home", "/index.html"],
-  ["Examples", "/pages/alert.html"]
+  ["Examples", "/pages/form.html"]
 ]
 
 anchors.forEach(item => createAnchorElements(item))
@@ -65,11 +71,10 @@ function createIconElements(item) {
   if (item[0] === "fas fa-bars") {
     listItem.className = item[0] + " my-hamburger"
     navDiv2.appendChild(listItem)
-  } else if(item[0] ==="fas icon fa-moon"){
+  } else if (item[0] === "fas icon fa-moon") {
     listItem.className = item[0] + " theme-toggle-btn"
     navDiv2.appendChild(listItem)
-  }
-  else {
+  } else {
 
     listItem.className = item[0];
     link = document.createElement("a");

@@ -198,6 +198,11 @@ header {
   .close-sidebar {
     display: block;
   }
+
+  .basic-modal.show,
+  .form-modal.show {
+    z-index: 5;
+  }
 }
 
 @media screen and (max-width: 680px) {
