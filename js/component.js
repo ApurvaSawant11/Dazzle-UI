@@ -77,6 +77,14 @@ if (navbarSearchIcon && searchbarClose) {
   });
 }
 
+const myHamburger = document.querySelector(".myhamburger");
+const subNav = document.querySelector(".sub-navigation");
+
+myHamburger.addEventListener('click', () => {
+    subNav.classList.toggle("nav-drawer")
+
+})
+
 // ||-------------------------------Drawer--------------------------------------
 
 const listItem = document.querySelectorAll(".list-item");
