@@ -20,16 +20,17 @@
         <div class="component-heading">
           <h2>Navigation</h2>
           <p>
-            Navigation bar helps you to access inforamation easily or navigate to different web pages.
+            Navigation bar helps you to access inforamation easily or navigate
+            to different web pages.
           </p>
         </div>
 
         <section class="component-section">
           <h4>Simple Navbar</h4>
           <p>
-             Simple navigation bar is mostly at the top of webpage horizontally.
+            Simple navigation bar is mostly at the top of webpage horizontally.
           </p>
-          <div class="component-example-container display-block">
+          <div class="py-1">
             <div class="card-shadow">
               <header class="header flex-row wrap">
                 <div class="navbar-section">
@@ -82,6 +83,27 @@
                 <i class="fa fa-search searchbar-search-icon"></i>
                 <i class="fas fa-times searchbar-close-icon"></i>
               </form>
+              <nav class="sub-navigation">
+                <div class="flex-row-center drawer-header">
+                  <a href="" class="nav-link">Home</a>
+                  <a href="" class="nav-link">Shop All</a>
+                </div>
+                <div class="drawer-footer border-top-1">
+                  <div class="navbar-icon p-1 pl-0p5">
+                    <a class="navbar-icon-link" href="/pages/login.html">
+                      <i class="fas fa-user-alt"></i>
+                      <span class="navbar-icon-text">Login</span>
+                    </a>
+                  </div>
+
+                  <div class="navbar-icon p-1 pl-0p5">
+                    <a class="navbar-icon-link" href="/pages/wishlist.html">
+                      <i class="fas fa-heart"></i>
+                      <span class="navbar-icon-text">Wishlist</span>
+                    </a>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
           <pre class="component-code-snippet">
@@ -138,6 +160,27 @@
                         <i class="fa fa-search searchbar-search-icon"></i>
                         <i class="fas fa-times searchbar-close-icon"></i>
                   </form>
+                  <nav class="sub-navigation nav-drawer">
+                    <div class="flex-row-center drawer-header">
+                      <a href="/index.html" class="nav-link">Home</a>
+                      <a href="/pages/product.html" class="nav-link">Shop All</a>
+                    </div>
+                    <div class="drawer-footer border-top-1">
+                      <div class="navbar-icon p-1 pl-0p5">
+                        <a class="navbar-icon-link" href="/pages/login.html">
+                          <i class="fas fa-user-alt"></i>
+                          <span class="navbar-icon-text">Login</span>
+                        </a>
+                      </div>
+        
+                      <div class="navbar-icon p-1 pl-0p5">
+                        <a class="navbar-icon-link" href="/pages/wishlist.html">
+                          <i class="fas fa-heart"></i>
+                          <span class="navbar-icon-text">Wishlist</span>
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
             </code>
           </pre>
         </section>
@@ -145,40 +188,42 @@
         <section class="component-section">
           <h4>Drawer Navigation</h4>
           <p>
-            This type of navigation is mostly used on the left or right sde of the webpage. It can be used as a sidebar when you have multiple links to access. 
+            This type of navigation is mostly used on the left or right sde of
+            the webpage. It can be used as a sidebar when you have multiple
+            links to access.
           </p>
           <div class="component-example-container">
             <div class="drawer-container border-1">
-                <h4 class="m-0">Title</h4>
-                <p class="subtitle">subtitle</p>
-                <div class="list">
-                  <ul class="list-style">
-                    <li class="list-item mt-0p5 active">
-                      <i class="fas fa-inbox fa-lg drawer-icon mr-1"></i> Inbox
-                    </li>
-                    <li class="list-item mt-0p5">
-                      <i class="fas fa-star fa-lg drawer-icon mr-1"></i> Star
-                    </li>
-                    <li class="list-item mt-0p5">
-                      <i class="fas fa-paper-plane fa-lg drawer-icon mr-1"></i
-                      >Sent Mail
-                    </li>
-                    <li class="list-item mt-0p5">
-                      <i class="fas fa-envelope-open fa-lg drawer-icon mr-1"></i>
-                      Drafts
-                    </li>
-                    <li class="list-item mt-0p5 nested">
-                      <i
-                        class="fas fa-tag fa-flip-horizontal fa-lg drawer-icon mr-1"
-                      ></i>
-                      Categories
-                      <div class="chevron-buttons ml-auto">
-                        <i class="fas fa-chevron-down dropdown"></i>
-                        <i class="fas fa-chevron-up up"></i>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+              <h4 class="m-0">Title</h4>
+              <p class="subtitle">subtitle</p>
+              <div class="list">
+                <ul class="list-style">
+                  <li class="list-item mt-0p5 active">
+                    <i class="fas fa-inbox fa-lg drawer-icon mr-1"></i> Inbox
+                  </li>
+                  <li class="list-item mt-0p5">
+                    <i class="fas fa-star fa-lg drawer-icon mr-1"></i> Star
+                  </li>
+                  <li class="list-item mt-0p5">
+                    <i class="fas fa-paper-plane fa-lg drawer-icon mr-1"></i
+                    >Sent Mail
+                  </li>
+                  <li class="list-item mt-0p5">
+                    <i class="fas fa-envelope-open fa-lg drawer-icon mr-1"></i>
+                    Drafts
+                  </li>
+                  <li class="list-item mt-0p5 nested">
+                    <i
+                      class="fas fa-tag fa-flip-horizontal fa-lg drawer-icon mr-1"
+                    ></i>
+                    Categories
+                    <div class="chevron-buttons ml-auto">
+                      <i class="fas fa-chevron-down dropdown"></i>
+                      <i class="fas fa-chevron-up up"></i>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <pre class="component-code-snippet">
