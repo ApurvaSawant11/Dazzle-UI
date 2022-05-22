@@ -46,19 +46,23 @@ const iconToast = document.querySelector(".icon-toast-container");
 const iconToastClose = document.querySelector(".icon-toast-close");
 
 if (simpleToastDemo && simpleToastClose && iconToastDemo && iconToastClose) {
-  simpleToastDemo.addEventListener('click', () => {
-    simpleToast.classList.add("show")
+  simpleToastDemo.addEventListener("click", () => {
+    simpleToast.classList.add("show");
     setTimeout(() => simpleToast.classList.remove("show"), 3000);
   });
 
-  simpleToastClose.addEventListener('click', () => simpleToast.classList.remove("show"))
+  simpleToastClose.addEventListener("click", () =>
+    simpleToast.classList.remove("show")
+  );
 
-  iconToastDemo.addEventListener('click', () => {
-    iconToast.classList.add('show')
-    setTimeout(() => iconToast.classList.remove('show'), 3000);
+  iconToastDemo.addEventListener("click", () => {
+    iconToast.classList.add("show");
+    setTimeout(() => iconToast.classList.remove("show"), 3000);
   });
 
-  iconToastClose.addEventListener('click', () => iconToast.classList.remove('show'))
+  iconToastClose.addEventListener("click", () =>
+    iconToast.classList.remove("show")
+  );
 }
 
 // ||-----------------------Navigation bar-----------------------------------
@@ -74,6 +78,15 @@ if (navbarSearchIcon && searchbarClose) {
 
   searchbarClose.addEventListener("click", () => {
     navbarSearchbar.classList.remove("show");
+  });
+}
+
+const myHamburger = document.querySelector(".myhamburger");
+const subNav = document.querySelector(".sub-navigation");
+
+if (myHamburger && subNav) {
+  myHamburger.addEventListener("click", () => {
+    subNav.classList.toggle("nav-drawer");
   });
 }
 

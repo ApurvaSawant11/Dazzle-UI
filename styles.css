@@ -161,7 +161,7 @@ header {
 }
 
 @media screen and (max-width: 1080px) {
-  nav {
+  .grid-layout > nav {
     position: fixed;
     z-index: 5;
   }

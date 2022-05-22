@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bungee+Shade&display=swap');
 
-nav{
+.grid-layout > nav{
     background-color: var(--navbar-bg);
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@ nav{
 }
 
 @media screen and (max-width: 380px) {
-    nav{
+    .grid-layout > nav{
         flex-direction: column;
         justify-content: space-around;
         padding: 0;
